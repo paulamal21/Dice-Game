@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background: linear-gradient(0.25turn, #5cc46d, #7b7c7a, #f69d3c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rule {
+    display: block;
+    height: 80vh;
+    width: 5rem;
+    text-align: center;
+    padding-left: 6rem;
+    font-size: large;
+    color: rgba(240, 248, 255, 0.685);
+}
+
+.btn--rules {
+    display: block;
+    background-color: #7b7c7a;
+    width: 7rem;
+    height: 3rem;
+    font-size: large;
+    text-decoration: double;
+    color: antiquewhite;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+.btn--rules:active {
+    background-color: #286d33;
+}
+
+#box {
+    position: relative;
+    width: 70rem;
+    height: 40rem;
+    background-color: rgb(116, 114, 114, 0.25);
+    backdrop-filter: blur(150px);
+    display: flex;
+    border: solid;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.player {
+    flex: 50%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.80s;
+}
+
+.name {
+    position: relative;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    word-spacing: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.score {
+    font-size: 8rem;
+    font-weight: 400;
+    color: rgb(160, 53, 11);
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.player--active {
+    background-color: #cf8331;
+}
+
+.player--active .name {
+    text-decoration: underline;
+}
+
+.player--active .current {
+    opacity: 1;
+}
+
+.current {
+    background-color: #286d33;
+    opacity: 0.8;
+    border-radius: 10%;
+    color: rgb(179, 165, 147);
+    width: 10rem;
+    height: 8rem;
+    text-align: center;
+    transition: all 0.80s;
+}
+
+.current-label {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.current-score {
+    font-size: 3rem;
+}
+
+.btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(179, 165, 147);
+    background-color: #286d33;
+    border: solid;
+    border-color: rgb(80, 78, 78);
+    font-size: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 1rem, 3rem;
+    border-radius: 40%;
+    height: 4rem;
+    width: 14rem;
+}
+
+.btn--new {
+    top: 1.1rem;
+    margin-left: 2%;
+}
+
+.btn--roll {
+    top: 27rem;
+    margin-left: 2%;
+}
+
+.btn--hold {
+    top: 32rem;
+    margin-left: 2%;
+}
+
+.btn:active {
+    transform: translate(-50%, 1rem);
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    top: 14rem;
+    margin-left: 2%;
+    transform: translateX(-50%);
+    height: 8rem;
+    border-radius: 20%;
+}
+
+.player--winner {
+    animation: mymove 7s;
+}
+
+@keyframes mymove {
+  from {background-color: rgb(187, 50, 50);}
+  to {background-color: rgb(211, 50, 117);}
+} 
