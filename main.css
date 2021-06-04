@@ -13,11 +13,12 @@ body {
 
 #rule {
     display: block;
-    height: 80vh;
-    width: 5rem;
+    height: 70vh;
+    width: 7rem;
     text-align: center;
-    padding-left: 6rem;
-    font-size: large;
+    padding-left: 5rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
     color: rgba(240, 248, 255, 0.685);
 }
 
@@ -30,7 +31,7 @@ body {
     text-decoration: double;
     color: antiquewhite;
     margin-left: 5rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .btn--rules:active {
@@ -39,8 +40,8 @@ body {
 
 #box {
     position: relative;
-    width: 70rem;
-    height: 40rem;
+    width: 58rem;
+    height: 37rem;
     background-color: rgb(116, 114, 114, 0.25);
     backdrop-filter: blur(150px);
     display: flex;
@@ -60,16 +61,16 @@ body {
 
 .name {
     position: relative;
-    font-size: 5rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
     word-spacing: 2rem;
     font-weight: 400;
     margin-bottom: 1rem;
 }
 
 .score {
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: 400;
     color: rgb(160, 53, 11);
     margin-bottom: auto;
@@ -93,15 +94,15 @@ body {
     opacity: 0.8;
     border-radius: 10%;
     color: rgb(179, 165, 147);
-    width: 10rem;
-    height: 8rem;
+    width: 8rem;
+    height: 6rem;
     text-align: center;
     transition: all 0.80s;
 }
 
 .current-label {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1rem;
     margin-top: 1.5rem;
 }
 
@@ -123,23 +124,24 @@ body {
     transition: 0.5s;
     padding: 1rem, 3rem;
     border-radius: 40%;
-    height: 4rem;
-    width: 14rem;
+    height: 3rem;
+    width: 10rem;
 }
 
 .btn--new {
-    top: 1.1rem;
-    margin-left: 2%;
+    top: 0.5rem;
+    margin-left: 0%;
+    font-size: 1rem;
 }
 
 .btn--roll {
     top: 27rem;
-    margin-left: 2%;
+    margin-left: 0%;
 }
 
 .btn--hold {
     top: 32rem;
-    margin-left: 2%;
+    margin-left: 0%;
 }
 
 .btn:active {
@@ -150,7 +152,7 @@ img {
     position: absolute;
     left: 50%;
     top: 14rem;
-    margin-left: 2%;
+    margin-left: 0%;
     transform: translateX(-50%);
     height: 8rem;
     border-radius: 20%;
