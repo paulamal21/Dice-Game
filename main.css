@@ -14,10 +14,11 @@ body {
 #rule {
     display: block;
     height: 70vh;
-    width: 7rem;
+    width: 8rem;
     text-align: center;
     padding-left: 5rem;
-    font-weight: 500;
+    font-weight: 300;
+    font-size: medium;
     letter-spacing: 0.1rem;
     color: rgba(240, 248, 255, 0.685);
 }
@@ -40,8 +41,8 @@ body {
 
 #box {
     position: relative;
-    width: 58rem;
-    height: 37rem;
+    width: 70%;
+    height: 70vh;
     background-color: rgb(116, 114, 114, 0.25);
     backdrop-filter: blur(150px);
     display: flex;
@@ -52,7 +53,7 @@ body {
 
 .player {
     flex: 50%;
-    padding: 4rem;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,7 +62,7 @@ body {
 
 .name {
     position: relative;
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     word-spacing: 2rem;
@@ -70,7 +71,7 @@ body {
 }
 
 .score {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 400;
     color: rgb(160, 53, 11);
     margin-bottom: auto;
@@ -94,8 +95,8 @@ body {
     opacity: 0.8;
     border-radius: 10%;
     color: rgb(179, 165, 147);
-    width: 8rem;
-    height: 6rem;
+    width: 7rem;
+    height: 5rem;
     text-align: center;
     transition: all 0.80s;
 }
@@ -107,7 +108,7 @@ body {
 }
 
 .current-score {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .btn {
@@ -118,29 +119,28 @@ body {
     background-color: #286d33;
     border: solid;
     border-color: rgb(80, 78, 78);
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.5s;
     padding: 1rem, 3rem;
     border-radius: 40%;
-    height: 3rem;
-    width: 10rem;
+    height: 2rem;
+    width: 7rem;
 }
 
 .btn--new {
     top: 0.5rem;
     margin-left: 0%;
-    font-size: 1rem;
 }
 
 .btn--roll {
-    top: 27rem;
+    top: 15rem;
     margin-left: 0%;
 }
 
 .btn--hold {
-    top: 32rem;
+    top: 18rem;
     margin-left: 0%;
 }
 
@@ -151,10 +151,10 @@ body {
 img {
     position: absolute;
     left: 50%;
-    top: 14rem;
+    top: 8rem;
     margin-left: 0%;
     transform: translateX(-50%);
-    height: 8rem;
+    height: 5rem;
     border-radius: 20%;
 }
 
