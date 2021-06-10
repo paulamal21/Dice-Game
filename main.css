@@ -166,3 +166,22 @@ img {
   from {background-color: rgb(187, 50, 50);}
   to {background-color: rgb(211, 50, 117);}
 } 
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #box {
+        display: flex;
+        height: 70vh;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .player {
+        display: flex;
+        width: 10%;
+    }
+}
